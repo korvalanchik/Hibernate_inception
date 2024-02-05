@@ -6,6 +6,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Properties;
 import java.util.stream.Stream;
 
@@ -20,7 +21,7 @@ public class ConfigurationFileUtils {
 
     public static Map<String, String> getConfigurationFromFile(String filePath) {
         Map<String, String> configuration = new HashMap<>();
-        String fileUrl = Thread.currentThread().getContextClassLoader().getResource(filePath).getPath().substring(1);
+        String fileUrl = Objects.requireNonNull(Thread.currentThread().getContextClassLoader().getResource(filePath)).getPath().substring(1);
 
         try (Stream<String> lines = Files.lines(Paths.get(fileUrl))) {
             lines.filter(line -> line.contains(KEY_VALUE_SEPARATOR))
@@ -40,7 +41,7 @@ public class ConfigurationFileUtils {
 
     public static Properties getPropertiesFromFile(String filePath) {
         Properties properties = new Properties();
-        String fileUrl = Thread.currentThread().getContextClassLoader().getResource(filePath).getPath();
+        String fileUrl = Objects.requireNonNull(Thread.currentThread().getContextClassLoader().getResource(filePath)).getPath();
 
         try (InputStream stream = Files.newInputStream(Paths.get(fileUrl))) {
             properties.load(stream);
