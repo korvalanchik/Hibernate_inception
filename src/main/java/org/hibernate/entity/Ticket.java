@@ -1,8 +1,6 @@
 package org.hibernate.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.sql.Timestamp;
@@ -13,9 +11,15 @@ import java.sql.Timestamp;
 @Data
 public class Ticket {
     @Id
-    private long id; // - ідентифікатор квитка, первинний сурогатний ключ, автоінкрементне число.
-    private Timestamp created_at; // - TIMESTAMP в UTC, коли був створений цей квиток
-    private long client_id; // - ідентифікатор клієнта, якому належить цей квиток.
-    private long from_planet_id; // - ідентифікатор планети, звідки відправляється пасажир
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id", nullable = false)
+    private long id;
+    @Column(name = "created_at")
+    private Timestamp created_at;
+    @Column(name = "client_id")
+    private long client_id;
+    @Column(name = "from_planet_id")
+    private long from_planet_id;
+    @Column(name = "to_planet_id")
     private long to_planet_id;
 }

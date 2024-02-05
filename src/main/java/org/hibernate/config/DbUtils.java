@@ -15,7 +15,7 @@ public class DbUtils {
 
     private static final Map<String, String> CONFIGURATION = new HashMap<>();
 
-    public void DbConfig() {
+    public DbUtils() {
         CONFIGURATION.putAll(ConfigurationFileUtils.getConfigurationFromFile(CONFIG_FILE_PATH));
     }
 
