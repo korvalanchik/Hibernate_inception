@@ -20,7 +20,7 @@ public class ConfigurationFileUtils {
 
     public static Map<String, String> getConfigurationFromFile(String filePath) {
         Map<String, String> configuration = new HashMap<>();
-        String fileUrl = Thread.currentThread().getContextClassLoader().getResource(filePath).getPath();
+        String fileUrl = Thread.currentThread().getContextClassLoader().getResource(filePath).getPath().substring(1);
 
         try (Stream<String> lines = Files.lines(Paths.get(fileUrl))) {
             lines.filter(line -> line.contains(KEY_VALUE_SEPARATOR))

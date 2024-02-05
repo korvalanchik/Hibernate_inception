@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5084bc71-3880-4656-b9f6-69caab7ede3c" name="Changes" comment="Initialise">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/HibernateTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/init/InitService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__init_db.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__populate_db.sql" afterDir="false" />
+    <list default="true" id="5084bc71-3880-4656-b9f6-69caab7ede3c" name="Changes" comment="Hibernate_test v1.0.1">
       <change beforePath="$PROJECT_DIR$/../SimpleServlet – копія" beforeDir="false" afterPath="$PROJECT_DIR$/../SimpleServlet – копія" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/InitService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/config/DbUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/config/DbUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Planet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Planet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/HibernateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/HibernateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/util/ConfigurationFileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/util/ConfigurationFileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2__populate_db.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +87,7 @@
       <workItem from="1707150483986" duration="4721000" />
       <workItem from="1707156604869" duration="27000" />
       <workItem from="1707156674185" duration="2009000" />
-      <workItem from="1707158788013" duration="2032000" />
+      <workItem from="1707158788013" duration="5419000" />
     </task>
     <task id="LOCAL-00001" summary="Initialise">
       <created>1707084499977</created>
@@ -110,9 +102,32 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initialise" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialise" />
+    <MESSAGE value="Hibernate_test v1.0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hibernate_test v1.0.1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/hibernate/util/ConfigurationFileUtils.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

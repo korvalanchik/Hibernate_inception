@@ -7,7 +7,7 @@ import org.hibernate.init.InitService;
 public class HibernateTest {
     public static void main(String[] args) {
         HibernateUtil hibernateConfig = HibernateUtil.getInstance();
-//        InitService insrv = new InitService();
+        InitService insrv = new InitService();
 
         try (Session session = hibernateConfig.getSessionFactory().openSession()) {
             Transaction transaction = session.beginTransaction();
