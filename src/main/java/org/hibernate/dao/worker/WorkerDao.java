@@ -1,6 +1,6 @@
 package org.hibernate.dao.worker;
 
-import org.example.enitty.Worker;
+import org.hibernate.enitty.Worker;
 
 import java.util.List;
 

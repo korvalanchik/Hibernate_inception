@@ -1,6 +1,6 @@
 package org.hibernate.dao.project;
 
-import org.example.enitty.Project;
+import org.hibernate.enitty.Project;
 
 import java.util.List;
 

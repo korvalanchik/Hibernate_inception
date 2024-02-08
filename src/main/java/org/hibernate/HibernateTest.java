@@ -1,13 +1,12 @@
 package org.hibernate;
 
-import org.hibernate.config.HibernateUtil;
+import org.hibernate.utils.HibernateUtils;
 import org.hibernate.entity.Client;
-import org.hibernate.init.InitService;
+
 
 public class HibernateTest {
     public static void main(String[] args) {
-        HibernateUtil hibernateConfig = HibernateUtil.getInstance();
-        new InitService();
+        HibernateUtils hibernateConfig = HibernateUtils.getInstance();
 
         try (Session session = hibernateConfig.getSessionFactory().openSession()) {
             Transaction transaction = session.beginTransaction();
@@ -18,9 +17,8 @@ public class HibernateTest {
 
             transaction.commit();
         } finally {
-            hibernateConfig.close();
+            hibernateConfig.closeSessionFactory();
         }
-
     }
     private static Client createClient() {
         Client client = new Client();

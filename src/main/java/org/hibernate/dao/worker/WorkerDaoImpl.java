@@ -1,7 +1,7 @@
 package org.hibernate.dao.worker;
 
-import org.example.enitty.Worker;
-import org.example.hibernate.HibernateUtils;
+import org.hibernate.enitty.Worker;
+import org.hibernate.utils.HibernateUtils;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 

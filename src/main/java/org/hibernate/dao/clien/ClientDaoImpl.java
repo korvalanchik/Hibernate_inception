@@ -1,7 +1,7 @@
 package org.hibernate.dao.clien;
 
-import org.example.enitty.Client;
-import org.example.hibernate.HibernateUtils;
+import org.hibernate.entity.Client;
+import org.hibernate.utils.HibernateUtils;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 

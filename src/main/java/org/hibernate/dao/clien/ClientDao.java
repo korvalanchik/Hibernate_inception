@@ -1,6 +1,6 @@
 package org.hibernate.dao.clien;
 
-import org.example.enitty.Client;
+import org.hibernate.entity.Client;
 
 public interface ClientDao {
 

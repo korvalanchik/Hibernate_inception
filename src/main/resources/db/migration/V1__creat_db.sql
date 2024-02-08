@@ -13,17 +13,17 @@ CREATE TABLE client (
 -- ----------------------------
 -- Records of client
 -- ----------------------------
-INSERT INTO client VALUES (1, 'Kolya');
-INSERT INTO client VALUES (2, 'Sirozha');
-INSERT INTO client VALUES (3, 'Vasya');
-INSERT INTO client VALUES (4, 'Kolya S.');
-INSERT INTO client VALUES (5, 'Sirozha');
-INSERT INTO client VALUES (6, 'Vasya P.');
-INSERT INTO client VALUES (7, 'Dima');
-INSERT INTO client VALUES (8, 'Grisha');
-INSERT INTO client VALUES (9, 'Natasha');
-INSERT INTO client VALUES (10, 'Kiryusha');
-INSERT INTO client VALUES (11, 'Tanya');
+--INSERT INTO client VALUES (1, 'Kolya');
+--INSERT INTO client VALUES (2, 'Sirozha');
+--INSERT INTO client VALUES (3, 'Vasya');
+--INSERT INTO client VALUES (4, 'Kolya S.');
+--INSERT INTO client VALUES (5, 'Sirozha');
+--INSERT INTO client VALUES (6, 'Vasya P.');
+--INSERT INTO client VALUES (7, 'Dima');
+--INSERT INTO client VALUES (8, 'Grisha');
+--INSERT INTO client VALUES (9, 'Natasha');
+--INSERT INTO client VALUES (10, 'Kiryusha');
+--INSERT INTO client VALUES (11, 'Tanya');
 
 
 -- ----------------------------

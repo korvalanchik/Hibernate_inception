@@ -19,9 +19,9 @@ public class HibernateUtils {
                 .addAnnotatedClass(Planet.class)
                 .addAnnotatedClass(Client.class)
                 .buildSessionFactory();
-        flywayMigration(PropertyReader.getConnectionUrlForPostgres(),
-                PropertyReader.getUserForPostgres(),
-                PropertyReader.getPasswordForPostgres());
+        flywayMigration(PropertyReader.getConnectionUrlForH2(),
+                PropertyReader.getUserForH2(),
+                PropertyReader.getPasswordForH2());
     }
 
     public static HibernateUtils getInstance() {

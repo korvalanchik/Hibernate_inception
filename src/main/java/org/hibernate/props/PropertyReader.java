@@ -8,22 +8,21 @@ import java.util.Properties;
 
 public class PropertyReader {
 
-    public static String getConnectionUrlForPostgres() {
+    public static String getConnectionUrlForH2() {
         return Objects.requireNonNull(getProperties())
                 .map(properties -> properties.getProperty("hibernate.connection.url")).orElse(null);
     }
 
-    public static String getUserForPostgres() {
+    public static String getUserForH2() {
         return Objects.requireNonNull(getProperties())
                 .map(properties -> properties.getProperty("hibernate.connection.username")).orElse(null);
     }
 
-    public static String getPasswordForPostgres() {
+    public static String getPasswordForH2() {
         return Objects.requireNonNull(getProperties())
                 .map(properties -> properties.getProperty("hibernate.connection.password")).orElse(null);
     }
 
-    /* Helpers */
 
     private static Optional<Properties> getProperties() {
         try (InputStream input = PropertyReader.class.getClassLoader()

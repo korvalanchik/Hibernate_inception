@@ -1,7 +1,7 @@
 package org.hibernate.dao.project;
 
-import org.example.enitty.Project;
-import org.example.hibernate.HibernateUtils;
+import org.hibernate.enitty.Project;
+import org.hibernate.utils.HibernateUtils;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
