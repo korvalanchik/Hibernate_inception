@@ -6,12 +6,14 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.Pattern;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.validator.constraints.Length;
 
-
+@Getter
+@Setter
 @Entity
 @Table(name = "planet")
-@Data
 public class Planet {
     @Id
     @Pattern(regexp = "[A-Z0-9]")

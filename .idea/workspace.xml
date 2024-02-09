@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5084bc71-3880-4656-b9f6-69caab7ede3c" name="Changes" comment="Hibernate_test v1.0.2 Beta">
-      <change afterPath="$PROJECT_DIR$/mydb.mv.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mydb.trace.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/HibernateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/HibernateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/props/PropertyReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/props/PropertyReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/util/ConfigurationFileUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/utils/HibernateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/utils/HibernateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Planet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Planet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Ticket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
