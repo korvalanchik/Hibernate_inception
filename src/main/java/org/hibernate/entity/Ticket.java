@@ -2,20 +2,16 @@ package org.hibernate.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import org.hibernate.enitty.Client;
+
 
 import java.sql.Timestamp;
 
 
-@Getter
-@Setter
-@Entity
+@Data@Entity
 @Table(name = "ticket")
 public class Ticket {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private long id;
 
@@ -23,12 +19,15 @@ public class Ticket {
     private Timestamp created_at;
 
     @ManyToOne
-    @JoinColumn(name="client_id", nullable=false)
+    @JoinColumn(name="client_id", referencedColumnName = "id", nullable=false)
     private Client client;
 
-    @Column(name = "from_planet_id", nullable = false)
-    private long from_planet_id;
+    @ManyToOne
+    @JoinColumn(name = "from_planet_id", referencedColumnName = "id")
+    private Planet fromPlanetId;
 
-    @Column(name = "to_planet_id", nullable = false)
-    private long to_planet_id;
+    @ManyToOne
+    @JoinColumn(name = "to_planet_id", referencedColumnName = "id")
+    private Planet toPlanetId;
+
 }

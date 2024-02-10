@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5084bc71-3880-4656-b9f6-69caab7ede3c" name="Changes" comment="Hibernate_test v1.0.2 Beta">
+      <change afterPath="$PROJECT_DIR$/mydb.mv.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mydb.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Planet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Planet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__creat_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__creat_db.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,36 +44,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;h2&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
     ],
-    &quot;RunConfigurationTargetLRU&quot;: [
-      &quot;2be06d99-75da-4e02-920f-79974c02ee37&quot;
+    "RunConfigurationTargetLRU": [
+      "2be06d99-75da-4e02-920f-79974c02ee37",
+      "8b893a75-454e-45ae-8b43-57c8495c63cd"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Database Script.V1__creat_db.sql">
     <configuration name="V1__creat_db.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/src/main/resources/db/migration/V1__creat_db.sql" />
       <script-mode>FILE</script-mode>
-      <data-source id="2be06d99-75da-4e02-920f-79974c02ee37" />
+      <data-source id="8b893a75-454e-45ae-8b43-57c8495c63cd" />
       <method v="2" />
     </configuration>
     <configuration name="V1__init_db.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
@@ -94,6 +98,7 @@
       <workItem from="1707156674185" duration="2009000" />
       <workItem from="1707158788013" duration="8868000" />
       <workItem from="1707304196941" duration="663000" />
+      <workItem from="1707587705926" duration="3599000" />
     </task>
     <task id="LOCAL-00001" summary="Initialise">
       <created>1707084499977</created>

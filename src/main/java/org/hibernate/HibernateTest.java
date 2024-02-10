@@ -11,9 +11,9 @@ public class HibernateTest {
         try (Session session = hibernateConfig.getSessionFactory().openSession()) {
             Transaction transaction = session.beginTransaction();
 
-            Client client = createClient();
-
-            session.persist(client);
+//            Client client = createClient();
+//
+//            session.persist(client);
 
             transaction.commit();
         } finally {
