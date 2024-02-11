@@ -8,8 +8,47 @@ import org.hibernate.Transaction;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Objects;
 
 public class TicketDaoImpl implements TicketDao {
+
+    @Override
+    public boolean createTicket(Ticket ticket) {
+        boolean result = false;
+        try (Session session = HibernateUtils.getInstance().getSessionFactory().openSession()) {
+            Transaction transaction = session.beginTransaction();
+            try {
+//                ticket.setId(null);
+                session.persist(ticket);
+                transaction.commit();
+                result = true;
+            } catch(Exception ex) {
+                ex.printStackTrace();
+                transaction.rollback();
+            }
+        }
+        return result;
+    }
+
+    @Override
+    public boolean updateTicket(Ticket ticket) {
+        boolean result = false;
+        if (Objects.isNull(ticket.getId())) {
+            return result;
+        }
+        try (Session session = HibernateUtils.getInstance().getSessionFactory().openSession()) {
+            Transaction transaction = session.beginTransaction();
+            try {
+                session.merge(ticket);
+                transaction.commit();
+                result = true;
+            } catch(Exception ex) {
+                ex.printStackTrace();
+                transaction.rollback();
+            }
+        }
+        return result;
+    }
 
     @Override
     public void deleteById (Long id) {
@@ -22,14 +61,13 @@ public class TicketDaoImpl implements TicketDao {
     }
 
     @Override
-    public List<Ticket> getLongestProjects () {
+    public List<Ticket> getTicketsByClientId(Long clientId) {
         try (Session session = HibernateUtils.getInstance().getSessionFactory().openSession()) {
-            Duration maxDuration = session.createQuery("select MAX(trunc(finishDate - startDate)) as days from Project", Duration.class)
-                    .getSingleResult();
+            String hql = "FROM Ticket t WHERE t.client.id = :clientId";
             return session
-                    .createQuery("FROM Project WHERE trunc(finishDate - startDate) = :maxDuration", Ticket.class)
-                    .setParameter("maxDuration", maxDuration)
-                    .list();
+                    .createQuery(hql, Ticket.class)
+                    .setParameter("clientId", clientId)
+                    .getResultList();
         }
     }
 }

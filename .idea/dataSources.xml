@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="mydb" uuid="8b893a75-454e-45ae-8b43-57c8495c63cd">
+    <data-source source="LOCAL" name="mydb" uuid="4dc03520-5226-45d1-888a-c6a09234fbe7">
       <driver-ref>h2.unified</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.h2.Driver</jdbc-driver>
-      <jdbc-url>jdbc:h2:/mydb</jdbc-url>
+      <jdbc-url>jdbc:h2:D:\JavaHomeWork\hibernate_inception/mydb</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

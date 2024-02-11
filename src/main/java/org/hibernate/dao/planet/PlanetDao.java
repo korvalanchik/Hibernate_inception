@@ -9,15 +9,11 @@ public interface PlanetDao {
 
     boolean updatePlanet(Planet planet);
 
-    Planet getPlanetById(Long workerId);
+    Planet getPlanetById(String planetId);
 
     List<Planet> getAllPlanets();
 
-    void deletePlanetById(Long workerId);
+    void deletePlanetById(String planetId);
 
     void deletePlanet(Planet planet);
-
-    List<Planet> getPlanetsWithMaxSalary();
-
-    List<Planet> getOldestAndYoungestPlanets();
 }

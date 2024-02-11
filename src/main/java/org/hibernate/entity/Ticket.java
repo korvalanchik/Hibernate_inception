@@ -7,19 +7,20 @@ import lombok.Data;
 import java.sql.Timestamp;
 
 
-@Data@Entity
+@Data
+@Entity
 @Table(name = "ticket")
 public class Ticket {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    private long id;
+    private Long id;
 
     @Column(name = "created_at")
     private Timestamp created_at;
 
     @ManyToOne
-    @JoinColumn(name="client_id", referencedColumnName = "id", nullable=false)
+    @JoinColumn(name="client_id", nullable=false)
     private Client client;
 
     @ManyToOne

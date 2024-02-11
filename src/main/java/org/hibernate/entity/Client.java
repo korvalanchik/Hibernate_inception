@@ -2,17 +2,13 @@ package org.hibernate.entity;
 
 import jakarta.persistence.*;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 import org.hibernate.validator.constraints.Length;
 
-import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 
-@Getter
-@Setter
+@Data
 @Entity
 @Table(name = "client")
 public class Client {
@@ -24,11 +20,11 @@ public class Client {
     @Length(min = 3, max = 200)
     private String name;
 
-    @OneToMany(mappedBy = "client")
-    private List<Ticket> tickets;
+
+    @OneToMany(mappedBy = "client", fetch = FetchType.EAGER)
+    private Set<Ticket> tickets;
 
 //    @OneToMany(mappedBy="client", cascade = CascadeType.ALL, orphanRemoval = true)
 //    private Set<Ticket> tickets = new HashSet<>();
-
 }
 
