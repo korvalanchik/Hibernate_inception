@@ -6,7 +6,6 @@ import org.hibernate.utils.HibernateUtils;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import java.time.Duration;
 import java.util.List;
 import java.util.Objects;
 
@@ -18,7 +17,7 @@ public class TicketDaoImpl implements TicketDao {
         try (Session session = HibernateUtils.getInstance().getSessionFactory().openSession()) {
             Transaction transaction = session.beginTransaction();
             try {
-//                ticket.setId(null);
+                ticket.setId(null);
                 session.persist(ticket);
                 transaction.commit();
                 result = true;

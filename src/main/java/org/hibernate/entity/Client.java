@@ -23,8 +23,5 @@ public class Client {
 
     @OneToMany(mappedBy = "client", fetch = FetchType.EAGER)
     private Set<Ticket> tickets;
-
-//    @OneToMany(mappedBy="client", cascade = CascadeType.ALL, orphanRemoval = true)
-//    private Set<Ticket> tickets = new HashSet<>();
 }
 

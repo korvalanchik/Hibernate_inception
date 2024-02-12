@@ -1,7 +1,6 @@
 package org.hibernate.dao.clien;
 
 import org.hibernate.entity.Client;
-import org.hibernate.entity.Ticket;
 import org.hibernate.utils.HibernateUtils;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -13,11 +12,10 @@ public class ClientDaoImpl implements ClientDao {
     @Override
     public Client findById (Long clientId) {
         try (Session session = HibernateUtils.getInstance().getSessionFactory().openSession()) {
-            Client client = session.get(Client.class, clientId);
+            return session.get(Client.class, clientId);
 
-            // TODO: for lazy loading.
+            // ***** for lazy loading. ****
             // client.getTickets().forEach(Ticket::getId);
-            return client;
         }
     }
 

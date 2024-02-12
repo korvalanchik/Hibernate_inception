@@ -11,7 +11,7 @@ import org.hibernate.entity.Ticket;
 public class HibernateUtils {
 
     private static final HibernateUtils INSTANCE = new HibernateUtils();
-    private SessionFactory sessionFactory;
+    private final SessionFactory sessionFactory;
 
     private HibernateUtils() {
         this.sessionFactory = new Configuration()

@@ -2,7 +2,6 @@ package org.hibernate.dao.clien;
 
 import org.hibernate.entity.Client;
 
-import java.util.List;
 
 public interface ClientDao {
 

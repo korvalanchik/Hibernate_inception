@@ -4,23 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5084bc71-3880-4656-b9f6-69caab7ede3c" name="Changes" comment="Hibernate_test v1.0.5 Alfa">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__populate_db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="5084bc71-3880-4656-b9f6-69caab7ede3c" name="Changes" comment="Hibernate_test v1.0.6 Alfa">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mydb.mv.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/HibernateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/HibernateTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/dao/clien/ClientDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/dao/clien/ClientDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/dao/clien/ClientDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/dao/clien/ClientDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/dao/planet/PlanetDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/dao/planet/PlanetDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/dao/planet/PlanetDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/dao/planet/PlanetDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/dao/ticket/TicketDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/dao/ticket/TicketDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/dao/ticket/TicketDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/dao/ticket/TicketDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Planet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Planet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/entity/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/hibernate/utils/HibernateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/hibernate/utils/HibernateUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__creat_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__creat_db.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,35 +48,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "h2"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;h2&quot;
     ],
-    "RunConfigurationTargetLRU": [
-      "2be06d99-75da-4e02-920f-79974c02ee37",
-      "8b893a75-454e-45ae-8b43-57c8495c63cd",
-      "4dc03520-5226-45d1-888a-c6a09234fbe7"
+    &quot;RunConfigurationTargetLRU&quot;: [
+      &quot;2be06d99-75da-4e02-920f-79974c02ee37&quot;,
+      &quot;8b893a75-454e-45ae-8b43-57c8495c63cd&quot;,
+      &quot;4dc03520-5226-45d1-888a-c6a09234fbe7&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected="Database Script.V2__populate_db.sql">
+}</component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="HibernateTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.hibernate.HibernateTest" />
       <module name="hibernate_inception.main" />
@@ -150,7 +144,8 @@
       <workItem from="1707158788013" duration="8868000" />
       <workItem from="1707304196941" duration="663000" />
       <workItem from="1707587705926" duration="7098000" />
-      <workItem from="1707646344648" duration="33521000" />
+      <workItem from="1707646344648" duration="34261000" />
+      <workItem from="1707765514781" duration="7333000" />
     </task>
     <task id="LOCAL-00001" summary="Initialise">
       <created>1707084499977</created>
@@ -173,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707596872837</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Hibernate_test v1.0.6 Alfa">
+      <created>1707695005779</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707695005779</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +201,18 @@
     <MESSAGE value="Hibernate_test v1.0.1" />
     <MESSAGE value="Hibernate_test v1.0.2 Beta" />
     <MESSAGE value="Hibernate_test v1.0.5 Alfa" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hibernate_test v1.0.5 Alfa" />
+    <MESSAGE value="Hibernate_test v1.0.6 Alfa" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hibernate_test v1.0.6 Alfa" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/hibernate/HibernateTest.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

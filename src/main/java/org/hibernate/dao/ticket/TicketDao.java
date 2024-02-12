@@ -1,6 +1,5 @@
 package org.hibernate.dao.ticket;
 
-import org.hibernate.entity.Client;
 import org.hibernate.entity.Ticket;
 
 import java.util.List;

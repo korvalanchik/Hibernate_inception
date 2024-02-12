@@ -10,11 +10,11 @@ import org.hibernate.validator.constraints.Length;
 @Table(name = "planet")
 public class Planet {
     @Id
-    @Pattern(regexp = "[A-Z0-9]+", message = "Field should consist of uppercase letters (A-Z) or digits (0-9)")
+    @Pattern(regexp = "^[0-9]+$", message = "Field should consist of uppercase letters (A-Z) or digits (0-9)")
     private String id;
 
     @Column(name = "name")
-    @Length(min = 1, max = 2)
+    @Length(min = 1, max = 500)
     private String name;
 
 }

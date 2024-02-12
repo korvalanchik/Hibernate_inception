@@ -5,8 +5,6 @@ import org.hibernate.utils.HibernateUtils;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -84,5 +82,4 @@ public class PlanetDaoImpl implements PlanetDao {
             transaction.commit();
         }
     }
-
 }
